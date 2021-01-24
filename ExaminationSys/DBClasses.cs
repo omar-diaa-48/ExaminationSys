@@ -34,6 +34,28 @@ namespace ExaminationSys
             }
             return user_type;
         }
+
+        public static DataTable SelectAllStudents()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlCommand sqlCmd = new SqlCommand("selAllStuds", connection);
+                sqlCmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlCmd);
+
+                adapter.Fill(dt);
+                if (dt.Rows.Count < 1)
+                    MessageBox.Show("No data found");
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Something wrong happened");
+            }
+            return dt;
+        }
         public static DataTable SelectData(string usrName, string usrPswd)
         {
             

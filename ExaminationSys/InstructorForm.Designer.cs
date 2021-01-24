@@ -132,6 +132,7 @@ namespace ExaminationSys
             resources.ApplyResources(this.sel_by_dept, "sel_by_dept");
             this.sel_by_dept.Name = "sel_by_dept";
             this.sel_by_dept.UseVisualStyleBackColor = true;
+            this.sel_by_dept.Click += new System.EventHandler(this.sel_by_dept_Click);
             // 
             // sel_all
             // 
@@ -139,6 +140,7 @@ namespace ExaminationSys
             resources.ApplyResources(this.sel_all, "sel_all");
             this.sel_all.Name = "sel_all";
             this.sel_all.UseVisualStyleBackColor = true;
+            this.sel_all.Click += new System.EventHandler(this.sel_all_Click);
             // 
             // InstructorForm
             // 
