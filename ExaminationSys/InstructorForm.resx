@@ -145,7 +145,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <metadata name="panel3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -172,7 +172,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <metadata name="panel5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -199,11 +199,62 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <metadata name="panel6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="UserName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="&gt;&gt;UserName.Name" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="&gt;&gt;UserName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserName.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;UserName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 18</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 187</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
   <metadata name="UserName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -297,27 +348,6 @@
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 18</value>
-  </data>
-  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 187</value>
-  </data>
-  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <metadata name="button13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -366,7 +396,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <metadata name="departmentLbl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -399,7 +429,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;departmentLbl.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <metadata name="salaryLbl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -435,7 +465,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;salaryLbl.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <metadata name="department.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -468,7 +498,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;department.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <metadata name="salary.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -501,7 +531,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;salary.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <metadata name="dgvData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -525,7 +555,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dgvData.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <metadata name="sel_by_dept.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -567,7 +597,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;sel_by_dept.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <metadata name="sel_all.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -612,8 +642,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;sel_all.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
+  <metadata name="jDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -626,6 +659,123 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>860, 475</value>
   </data>
+  <metadata name="btnUpdtStud.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnUpdtStud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnUpdtStud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>726, 368</value>
+  </data>
+  <data name="btnUpdtStud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 60</value>
+  </data>
+  <data name="btnUpdtStud.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="btnUpdtStud.Text" xml:space="preserve">
+    <value>Update student data</value>
+  </data>
+  <data name="&gt;&gt;btnUpdtStud.Name" xml:space="preserve">
+    <value>btnUpdtStud</value>
+  </data>
+  <data name="&gt;&gt;btnUpdtStud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUpdtStud.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnUpdtStud.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="btnDltStud.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnDltStud.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDltStud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 368</value>
+  </data>
+  <data name="btnDltStud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 60</value>
+  </data>
+  <data name="btnDltStud.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="btnDltStud.Text" xml:space="preserve">
+    <value>Delete student data</value>
+  </data>
+  <data name="&gt;&gt;btnDltStud.Name" xml:space="preserve">
+    <value>btnDltStud</value>
+  </data>
+  <data name="&gt;&gt;btnDltStud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDltStud.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDltStud.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="btnRgstrStud.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnRgstrStud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 368</value>
+  </data>
+  <data name="btnRgstrStud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 60</value>
+  </data>
+  <data name="btnRgstrStud.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="btnRgstrStud.Text" xml:space="preserve">
+    <value>Register a student</value>
+  </data>
+  <data name="&gt;&gt;btnRgstrStud.Name" xml:space="preserve">
+    <value>btnRgstrStud</value>
+  </data>
+  <data name="&gt;&gt;btnRgstrStud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRgstrStud.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRgstrStud.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="lblTotalStuds.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblTotalStuds.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTotalStuds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 313</value>
+  </data>
+  <data name="lblTotalStuds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 23</value>
+  </data>
+  <data name="lblTotalStuds.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="lblTotalStuds.Text" xml:space="preserve">
+    <value>Number of students: </value>
+  </data>
+  <data name="&gt;&gt;lblTotalStuds.Name" xml:space="preserve">
+    <value>lblTotalStuds</value>
+  </data>
+  <data name="&gt;&gt;lblTotalStuds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTotalStuds.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTotalStuds.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 14.25pt</value>
   </data>
@@ -634,6 +784,12 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>InstructorForm</value>
+  </data>
+  <data name="&gt;&gt;jDragControl1.Name" xml:space="preserve">
+    <value>jDragControl1</value>
+  </data>
+  <data name="&gt;&gt;jDragControl1.Type" xml:space="preserve">
+    <value>JDragControl.JDragControl, JDragControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>InstructorForm</value>

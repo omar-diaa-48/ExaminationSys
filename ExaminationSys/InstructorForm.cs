@@ -13,6 +13,11 @@ namespace ExaminationSys
 {
     public partial class InstructorForm : Form
     {
+        public string NumberOfStudents
+        {
+            get => lblTotalStuds.Text;
+            set => lblTotalStuds.Text = value;
+        }
         public InstructorForm()
         {
             InitializeComponent();
@@ -30,6 +35,7 @@ namespace ExaminationSys
             DataTable dt = new DataTable();
             dt = DBClasses.SelectAllStudents();
             this.dgvData.DataSource = dt;
+            lblTotalStuds.Text = $"Number of students: {dt.Rows.Count}";
         }
 
         private void sel_by_dept_Click(object sender, EventArgs e)
@@ -37,6 +43,18 @@ namespace ExaminationSys
             DataTable dt = new DataTable();
             dt = DBClasses.GetStudentsWDeptId(this.department.Text);
             this.dgvData.DataSource = dt;
+            lblTotalStuds.Text = $"Number of students: {dt.Rows.Count}";
+        }
+
+        private void btnDltStud_Click(object sender, EventArgs e)
+        {
+            string studId = "";
+            if (dgvData.SelectedRows.Count > 1)
+                MessageBox.Show("You have to choose only one student to delete");
+            else
+            {
+
+            }
         }
     }
 }

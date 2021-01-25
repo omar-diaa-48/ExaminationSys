@@ -68,6 +68,7 @@ namespace ExaminationSys
                 }
                 DataTable dtStud = DBClasses.GetStudentsWDeptId(department);
                 InstForm.dgvData.DataSource = dtStud;
+                InstForm.NumberOfStudents = $"Number of students: {dt.Rows.Count}";
                 this.Hide();
                 InstForm.Show();
             }

@@ -29,6 +29,7 @@ namespace ExaminationSys
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstructorForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -44,6 +45,11 @@ namespace ExaminationSys
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.sel_by_dept = new System.Windows.Forms.Button();
             this.sel_all = new System.Windows.Forms.Button();
+            this.jDragControl1 = new JDragControl.JDragControl(this.components);
+            this.lblTotalStuds = new System.Windows.Forms.Label();
+            this.btnRgstrStud = new System.Windows.Forms.Button();
+            this.btnDltStud = new System.Windows.Forms.Button();
+            this.btnUpdtStud = new System.Windows.Forms.Button();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
@@ -142,11 +148,44 @@ namespace ExaminationSys
             this.sel_all.UseVisualStyleBackColor = true;
             this.sel_all.Click += new System.EventHandler(this.sel_all_Click);
             // 
+            // jDragControl1
+            // 
+            this.jDragControl1.GetForm = this;
+            this.jDragControl1.TargetControl = this;
+            // 
+            // lblTotalStuds
+            // 
+            resources.ApplyResources(this.lblTotalStuds, "lblTotalStuds");
+            this.lblTotalStuds.Name = "lblTotalStuds";
+            // 
+            // btnRgstrStud
+            // 
+            resources.ApplyResources(this.btnRgstrStud, "btnRgstrStud");
+            this.btnRgstrStud.Name = "btnRgstrStud";
+            this.btnRgstrStud.UseVisualStyleBackColor = true;
+            // 
+            // btnDltStud
+            // 
+            resources.ApplyResources(this.btnDltStud, "btnDltStud");
+            this.btnDltStud.Name = "btnDltStud";
+            this.btnDltStud.UseVisualStyleBackColor = true;
+            this.btnDltStud.Click += new System.EventHandler(this.btnDltStud_Click);
+            // 
+            // btnUpdtStud
+            // 
+            resources.ApplyResources(this.btnUpdtStud, "btnUpdtStud");
+            this.btnUpdtStud.Name = "btnUpdtStud";
+            this.btnUpdtStud.UseVisualStyleBackColor = true;
+            // 
             // InstructorForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.btnUpdtStud);
+            this.Controls.Add(this.btnDltStud);
+            this.Controls.Add(this.btnRgstrStud);
+            this.Controls.Add(this.lblTotalStuds);
             this.Controls.Add(this.sel_all);
             this.Controls.Add(this.sel_by_dept);
             this.Controls.Add(this.dgvData);
@@ -186,5 +225,10 @@ namespace ExaminationSys
         public System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.Button sel_by_dept;
         private System.Windows.Forms.Button sel_all;
+        private JDragControl.JDragControl jDragControl1;
+        private System.Windows.Forms.Label lblTotalStuds;
+        private System.Windows.Forms.Button btnUpdtStud;
+        private System.Windows.Forms.Button btnDltStud;
+        private System.Windows.Forms.Button btnRgstrStud;
     }
 }
