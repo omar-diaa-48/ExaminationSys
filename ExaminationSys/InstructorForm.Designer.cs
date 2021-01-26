@@ -130,6 +130,7 @@ namespace ExaminationSys
             this.dgvData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgvData, "dgvData");
+            this.dgvData.MultiSelect = false;
             this.dgvData.Name = "dgvData";
             // 
             // sel_by_dept
@@ -163,6 +164,7 @@ namespace ExaminationSys
             resources.ApplyResources(this.btnRgstrStud, "btnRgstrStud");
             this.btnRgstrStud.Name = "btnRgstrStud";
             this.btnRgstrStud.UseVisualStyleBackColor = true;
+            this.btnRgstrStud.Click += new System.EventHandler(this.btnRgstrStud_Click);
             // 
             // btnDltStud
             // 
@@ -200,6 +202,7 @@ namespace ExaminationSys
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InstructorForm";
+            this.Load += new System.EventHandler(this.InstructorForm_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

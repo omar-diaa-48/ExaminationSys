@@ -8,13 +8,14 @@ namespace ExaminationSys
 {
     public class ReturnedExam
     {
-        public string Grade, Aswers, Questions,CourseID,StudId,ExamID,testDate;
+        public int Grade;
+        public string Aswers, Questions,CourseID,StudId,ExamID,testDate;
         public Dictionary<string,string > Questions_Body = new Dictionary<string, string>();
         public Dictionary<string, string> Questions_Answers = new Dictionary<string, string>();
 
         public ReturnedExam()
         {
-            Grade = "";
+            Grade = 0;
             Aswers = ""; Questions = "";CourseID = "";StudId = ""; ExamID = ""; testDate="";
 
         }

@@ -13,6 +13,7 @@ namespace ExaminationSys
 {
     public partial class StudentForm : Form
     {
+        public string UserNameProp { get; set; }
         public StudentForm()
         {
             InitializeComponent();
@@ -183,14 +184,14 @@ namespace ExaminationSys
         private void button2_Click(object sender, EventArgs e)
         {
             string choosen = (courses.SelectedItem.ToString());
-            ReturnedExam studExam = DBClasses.Generate_Exam(choosen);
-            MessageBox.Show(studExam.Questions);
+            TheExam.Studchoosen = choosen;
+
+
+            ReturnedExam studExam1 = DBClasses.Generate_Exam(choosen);
+            studExam1.StudId = DBClasses.ReturnStdID(UserNameProp);
+            TheExam.studExam = studExam1;
+            //MessageBox.Show(studExam.Questions);
             TheExam exam = new TheExam();
-            foreach (var i in studExam.Questions_Body)
-                if (DBClasses.Q_type(i.Key)=="mcq")
-                exam.mcq.Text += (i.Value+ "\r\n");
-            else 
-                    exam.tf.Text+= (i.Value + "\r\n");
             this.Close();
             exam.Show();
         }

@@ -49,12 +49,30 @@ namespace ExaminationSys
         private void btnDltStud_Click(object sender, EventArgs e)
         {
             string studId = "";
-            if (dgvData.SelectedRows.Count > 1)
-                MessageBox.Show("You have to choose only one student to delete");
-            else
+            if (dgvData.SelectedRows.Count == 1)
             {
+                foreach (DataGridViewRow Row in dgvData.SelectedRows)
+                    studId = Row.Cells[0].Value.ToString();
 
+                if (DBClasses.DeleteStud(studId))
+                    MessageBox.Show("Student deleted");
+                else
+                    MessageBox.Show("Student not deleted");
             }
+            else
+                MessageBox.Show("Select only one student to delete");
+        }
+
+        private void InstructorForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRgstrStud_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Forms.RegStudForm = new RegStudent();
+            Forms.RegStudForm.Show();
         }
     }
 }

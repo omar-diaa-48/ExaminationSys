@@ -29,19 +29,20 @@ namespace ExaminationSys
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheExam));
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.validate = new System.Windows.Forms.Button();
-            this.mcq = new System.Windows.Forms.TextBox();
-            this.tf = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ExamDrag = new JDragControl.JDragControl(this.components);
+            this.submit = new System.Windows.Forms.Button();
+            this.next = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
+            this.ans1 = new System.Windows.Forms.RadioButton();
+            this.ans2 = new System.Windows.Forms.RadioButton();
+            this.ans3 = new System.Windows.Forms.RadioButton();
+            this.ans4 = new System.Windows.Forms.RadioButton();
+            this.quest_body = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // panel5
@@ -104,84 +105,130 @@ namespace ExaminationSys
             this.label2.Text = "Welcome";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // validate
+            // submit
             // 
-            this.validate.FlatAppearance.BorderSize = 0;
-            this.validate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.validate.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.validate.Image = ((System.Drawing.Image)(resources.GetObject("validate.Image")));
-            this.validate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.validate.Location = new System.Drawing.Point(537, 308);
-            this.validate.Margin = new System.Windows.Forms.Padding(5);
-            this.validate.Name = "validate";
-            this.validate.Size = new System.Drawing.Size(247, 84);
-            this.validate.TabIndex = 46;
-            this.validate.Text = "Submit Answers";
-            this.validate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.validate.UseVisualStyleBackColor = true;
+            this.submit.FlatAppearance.BorderSize = 0;
+            this.submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.submit.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.submit.Location = new System.Drawing.Point(623, 329);
+            this.submit.Margin = new System.Windows.Forms.Padding(5);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(183, 84);
+            this.submit.TabIndex = 46;
+            this.submit.Text = "Submit Answers";
+            this.submit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.submit.UseVisualStyleBackColor = true;
+            this.submit.Visible = false;
+            this.submit.Click += new System.EventHandler(this.validate_Click);
             // 
-            // mcq
+            // next
             // 
-            this.mcq.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mcq.Location = new System.Drawing.Point(39, 119);
-            this.mcq.Margin = new System.Windows.Forms.Padding(5);
-            this.mcq.Multiline = true;
-            this.mcq.Name = "mcq";
-            this.mcq.Size = new System.Drawing.Size(394, 163);
-            this.mcq.TabIndex = 47;
-            this.mcq.TextChanged += new System.EventHandler(this.ExamBody_TextChanged);
+            this.next.FlatAppearance.BorderSize = 0;
+            this.next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.next.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.next.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(43)))), ((int)(((byte)(100)))));
+            this.next.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.next.Location = new System.Drawing.Point(693, 260);
+            this.next.Margin = new System.Windows.Forms.Padding(5);
+            this.next.Name = "next";
+            this.next.Size = new System.Drawing.Size(72, 59);
+            this.next.TabIndex = 54;
+            this.next.Text = "Next";
+            this.next.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.next.UseVisualStyleBackColor = true;
+            this.next.Click += new System.EventHandler(this.next_Click);
             // 
-            // tf
+            // back
             // 
-            this.tf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tf.Location = new System.Drawing.Point(443, 119);
-            this.tf.Margin = new System.Windows.Forms.Padding(5);
-            this.tf.Multiline = true;
-            this.tf.Name = "tf";
-            this.tf.Size = new System.Drawing.Size(341, 163);
-            this.tf.TabIndex = 48;
+            this.back.FlatAppearance.BorderSize = 0;
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(43)))), ((int)(((byte)(100)))));
+            this.back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back.Location = new System.Drawing.Point(33, 260);
+            this.back.Margin = new System.Windows.Forms.Padding(5);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(74, 59);
+            this.back.TabIndex = 55;
+            this.back.Text = "Back";
+            this.back.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
-            // label1
+            // ans1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Gabriola", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(43)))), ((int)(((byte)(100)))));
-            this.label1.Location = new System.Drawing.Point(114, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 65);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "MCQ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ans1.AutoSize = true;
+            this.ans1.Font = new System.Drawing.Font("Gabriola", 20.25F, System.Drawing.FontStyle.Bold);
+            this.ans1.Location = new System.Drawing.Point(191, 171);
+            this.ans1.Name = "ans1";
+            this.ans1.Size = new System.Drawing.Size(158, 54);
+            this.ans1.TabIndex = 56;
+            this.ans1.TabStop = true;
+            this.ans1.Text = "radioButton1";
+            this.ans1.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // ans2
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Font = new System.Drawing.Font("Gabriola", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(43)))), ((int)(((byte)(100)))));
-            this.label3.Location = new System.Drawing.Point(536, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 65);
-            this.label3.TabIndex = 50;
-            this.label3.Text = "True Or False";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ans2.AutoSize = true;
+            this.ans2.Font = new System.Drawing.Font("Gabriola", 20.25F, System.Drawing.FontStyle.Bold);
+            this.ans2.Location = new System.Drawing.Point(191, 229);
+            this.ans2.Name = "ans2";
+            this.ans2.Size = new System.Drawing.Size(161, 54);
+            this.ans2.TabIndex = 57;
+            this.ans2.TabStop = true;
+            this.ans2.Text = "radioButton2";
+            this.ans2.UseVisualStyleBackColor = true;
             // 
-            // ExamDrag
+            // ans3
             // 
-            this.ExamDrag.GetForm = this;
-            this.ExamDrag.TargetControl = this;
+            this.ans3.AutoSize = true;
+            this.ans3.Font = new System.Drawing.Font("Gabriola", 20.25F, System.Drawing.FontStyle.Bold);
+            this.ans3.Location = new System.Drawing.Point(191, 287);
+            this.ans3.Name = "ans3";
+            this.ans3.Size = new System.Drawing.Size(161, 54);
+            this.ans3.TabIndex = 58;
+            this.ans3.TabStop = true;
+            this.ans3.Text = "radioButton3";
+            this.ans3.UseVisualStyleBackColor = true;
+            // 
+            // ans4
+            // 
+            this.ans4.AutoSize = true;
+            this.ans4.Font = new System.Drawing.Font("Gabriola", 20.25F, System.Drawing.FontStyle.Bold);
+            this.ans4.Location = new System.Drawing.Point(191, 345);
+            this.ans4.Name = "ans4";
+            this.ans4.Size = new System.Drawing.Size(163, 54);
+            this.ans4.TabIndex = 59;
+            this.ans4.TabStop = true;
+            this.ans4.Text = "radioButton4";
+            this.ans4.UseVisualStyleBackColor = true;
+            // 
+            // quest_body
+            // 
+            this.quest_body.BackColor = System.Drawing.SystemColors.Control;
+            this.quest_body.Font = new System.Drawing.Font("Gabriola", 20.25F, System.Drawing.FontStyle.Bold);
+            this.quest_body.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(43)))), ((int)(((byte)(100)))));
+            this.quest_body.Location = new System.Drawing.Point(76, 72);
+            this.quest_body.Multiline = true;
+            this.quest_body.Name = "quest_body";
+            this.quest_body.ReadOnly = true;
+            this.quest_body.Size = new System.Drawing.Size(635, 93);
+            this.quest_body.TabIndex = 60;
             // 
             // TheExam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 431);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tf);
-            this.Controls.Add(this.mcq);
-            this.Controls.Add(this.validate);
+            this.Controls.Add(this.quest_body);
+            this.Controls.Add(this.ans4);
+            this.Controls.Add(this.ans3);
+            this.Controls.Add(this.ans2);
+            this.Controls.Add(this.ans1);
+            this.Controls.Add(this.back);
+            this.Controls.Add(this.next);
+            this.Controls.Add(this.submit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -190,6 +237,7 @@ namespace ExaminationSys
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TheExam";
             this.Text = "TheExam";
+            this.Load += new System.EventHandler(this.TheExam_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,11 +250,13 @@ namespace ExaminationSys
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button13;
         public System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button validate;
-        public System.Windows.Forms.TextBox mcq;
-        public System.Windows.Forms.TextBox tf;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label label3;
-        private JDragControl.JDragControl ExamDrag;
+        private System.Windows.Forms.Button submit;
+        public System.Windows.Forms.Button next;
+        public System.Windows.Forms.Button back;
+        public System.Windows.Forms.RadioButton ans1;
+        public System.Windows.Forms.RadioButton ans2;
+        public System.Windows.Forms.RadioButton ans3;
+        public System.Windows.Forms.RadioButton ans4;
+        public System.Windows.Forms.TextBox quest_body;
     }
 }
