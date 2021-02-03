@@ -113,6 +113,24 @@ namespace ExaminationSys
                 return true;
             }
         }
+        public static DataTable GetStudScore(string studId)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlCommand sqlCmd = new SqlCommand("GetStudScore", connection);
+                sqlCmd.CommandType = CommandType.StoredProcedure;
+                sqlCmd.Parameters.AddWithValue("@StId", studId);
+                SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
+                sqlDa.Fill(dt);
+
+            }
+            catch
+            {
+                MessageBox.Show("Something wrong happened");
+            }
+            return dt;
+        }
         public static void UpdatePhone(string phone, string usrName)
         {
             SqlCommand sqlCmd = new SqlCommand("Update_Email", connection);

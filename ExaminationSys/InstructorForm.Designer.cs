@@ -49,7 +49,7 @@ namespace ExaminationSys
             this.lblTotalStuds = new System.Windows.Forms.Label();
             this.btnRgstrStud = new System.Windows.Forms.Button();
             this.btnDltStud = new System.Windows.Forms.Button();
-            this.btnUpdtStud = new System.Windows.Forms.Button();
+            this.btnShowResult = new System.Windows.Forms.Button();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
@@ -173,18 +173,19 @@ namespace ExaminationSys
             this.btnDltStud.UseVisualStyleBackColor = true;
             this.btnDltStud.Click += new System.EventHandler(this.btnDltStud_Click);
             // 
-            // btnUpdtStud
+            // btnShowResult
             // 
-            resources.ApplyResources(this.btnUpdtStud, "btnUpdtStud");
-            this.btnUpdtStud.Name = "btnUpdtStud";
-            this.btnUpdtStud.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnShowResult, "btnShowResult");
+            this.btnShowResult.Name = "btnShowResult";
+            this.btnShowResult.UseVisualStyleBackColor = true;
+            this.btnShowResult.Click += new System.EventHandler(this.btnUpdtStud_Click);
             // 
             // InstructorForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.btnUpdtStud);
+            this.Controls.Add(this.btnShowResult);
             this.Controls.Add(this.btnDltStud);
             this.Controls.Add(this.btnRgstrStud);
             this.Controls.Add(this.lblTotalStuds);
@@ -230,7 +231,7 @@ namespace ExaminationSys
         private System.Windows.Forms.Button sel_all;
         private JDragControl.JDragControl jDragControl1;
         private System.Windows.Forms.Label lblTotalStuds;
-        private System.Windows.Forms.Button btnUpdtStud;
+        private System.Windows.Forms.Button btnShowResult;
         private System.Windows.Forms.Button btnDltStud;
         private System.Windows.Forms.Button btnRgstrStud;
     }

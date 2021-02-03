@@ -74,5 +74,37 @@ namespace ExaminationSys
             Forms.RegStudForm = new RegStudent();
             Forms.RegStudForm.Show();
         }
+
+        private void btnUpdtStud_Click(object sender, EventArgs e)
+        {
+            string studId = "";
+            if (dgvData.SelectedRows.Count == 1)
+            {
+                foreach (DataGridViewRow item in dgvData.SelectedRows)
+                {
+                    studId = item.Cells["StudId"].Value.ToString();
+                }
+
+                DataTable dt = new DataTable();
+                dt = DBClasses.GetStudScore(studId);
+
+                if (dt.Rows.Count > 0)
+                {
+                    string message = "";
+                    foreach (DataRow item in dt.Rows)
+                    {
+                        message += $"{item["CourseName"]} : {item["Grade"]} : {item["TestDate"]}";
+                    }
+
+                    MessageBox.Show(message);
+                }
+                else
+                    MessageBox.Show("No exam results for this student");
+            }
+            else
+                MessageBox.Show("Please select only one student to show his/her results");
+
+            
+        }
     }
 }
