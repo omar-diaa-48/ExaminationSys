@@ -130,7 +130,7 @@ namespace ExaminationSys
             this.button2.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.Location = new System.Drawing.Point(40, 314);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button2.Margin = new System.Windows.Forms.Padding(5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 45);
             this.button2.TabIndex = 100;
@@ -329,7 +329,7 @@ namespace ExaminationSys
             this.addbtn.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.addbtn.Location = new System.Drawing.Point(361, 393);
-            this.addbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addbtn.Margin = new System.Windows.Forms.Padding(2);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(140, 49);
             this.addbtn.TabIndex = 10;
@@ -366,10 +366,13 @@ namespace ExaminationSys
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegStudent";
             this.Text = "RegStudent";
             this.Load += new System.EventHandler(this.RegStudent_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RegStudent_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.RegStudent_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.RegStudent_MouseUp);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);

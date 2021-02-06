@@ -29,7 +29,6 @@ namespace ExaminationSys
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstructorForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -45,7 +44,6 @@ namespace ExaminationSys
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.sel_by_dept = new System.Windows.Forms.Button();
             this.sel_all = new System.Windows.Forms.Button();
-            this.jDragControl1 = new JDragControl.JDragControl(this.components);
             this.lblTotalStuds = new System.Windows.Forms.Label();
             this.btnRgstrStud = new System.Windows.Forms.Button();
             this.btnDltStud = new System.Windows.Forms.Button();
@@ -149,11 +147,6 @@ namespace ExaminationSys
             this.sel_all.UseVisualStyleBackColor = true;
             this.sel_all.Click += new System.EventHandler(this.sel_all_Click);
             // 
-            // jDragControl1
-            // 
-            this.jDragControl1.GetForm = this;
-            this.jDragControl1.TargetControl = this;
-            // 
             // lblTotalStuds
             // 
             resources.ApplyResources(this.lblTotalStuds, "lblTotalStuds");
@@ -204,6 +197,9 @@ namespace ExaminationSys
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InstructorForm";
             this.Load += new System.EventHandler(this.InstructorForm_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.InstructorForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.InstructorForm_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.InstructorForm_MouseUp);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -229,7 +225,6 @@ namespace ExaminationSys
         public System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.Button sel_by_dept;
         private System.Windows.Forms.Button sel_all;
-        private JDragControl.JDragControl jDragControl1;
         private System.Windows.Forms.Label lblTotalStuds;
         private System.Windows.Forms.Button btnShowResult;
         private System.Windows.Forms.Button btnDltStud;

@@ -238,6 +238,9 @@ namespace ExaminationSys
             this.Name = "TheExam";
             this.Text = "TheExam";
             this.Load += new System.EventHandler(this.TheExam_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TheExam_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TheExam_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.TheExam_MouseUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 

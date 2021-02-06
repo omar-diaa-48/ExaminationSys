@@ -207,6 +207,57 @@
   <metadata name="UserName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="pictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="&gt;&gt;UserName.Name" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="&gt;&gt;UserName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserName.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;UserName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 18</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 187</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <metadata name="UserName.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="UserName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -296,27 +347,6 @@
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 18</value>
-  </data>
-  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 187</value>
-  </data>
-  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>12</value>
   </data>
   <metadata name="button13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -614,53 +644,62 @@
   <data name="&gt;&gt;sel_all.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="jDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblTotalStuds.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="lblTotalStuds.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 23</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>860, 475</value>
+  <data name="lblTotalStuds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 313</value>
   </data>
-  <metadata name="btnShowResult.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="btnShowResult.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lblTotalStuds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 23</value>
   </data>
-  <data name="btnShowResult.Location" type="System.Drawing.Point, System.Drawing">
-    <value>726, 368</value>
+  <data name="lblTotalStuds.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
   </data>
-  <data name="btnShowResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 60</value>
+  <data name="lblTotalStuds.Text" xml:space="preserve">
+    <value>Number of students: </value>
   </data>
-  <data name="btnShowResult.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
+  <data name="&gt;&gt;lblTotalStuds.Name" xml:space="preserve">
+    <value>lblTotalStuds</value>
   </data>
-  <data name="btnShowResult.Text" xml:space="preserve">
-    <value>Show Results</value>
+  <data name="&gt;&gt;lblTotalStuds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnShowResult.Name" xml:space="preserve">
-    <value>btnShowResult</value>
-  </data>
-  <data name="&gt;&gt;btnShowResult.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnShowResult.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblTotalStuds.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnShowResult.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;lblTotalStuds.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="btnRgstrStud.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnRgstrStud.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 368</value>
+  </data>
+  <data name="btnRgstrStud.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 60</value>
+  </data>
+  <data name="btnRgstrStud.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="btnRgstrStud.Text" xml:space="preserve">
+    <value>Register a student</value>
+  </data>
+  <data name="&gt;&gt;btnRgstrStud.Name" xml:space="preserve">
+    <value>btnRgstrStud</value>
+  </data>
+  <data name="&gt;&gt;btnRgstrStud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRgstrStud.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRgstrStud.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="btnDltStud.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -692,62 +731,50 @@
   <data name="&gt;&gt;btnDltStud.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="btnRgstrStud.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="btnShowResult.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="btnRgstrStud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 368</value>
+  <data name="btnShowResult.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btnRgstrStud.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnShowResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>726, 368</value>
+  </data>
+  <data name="btnShowResult.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 60</value>
   </data>
-  <data name="btnRgstrStud.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
+  <data name="btnShowResult.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
   </data>
-  <data name="btnRgstrStud.Text" xml:space="preserve">
-    <value>Register a student</value>
+  <data name="btnShowResult.Text" xml:space="preserve">
+    <value>Show Results</value>
   </data>
-  <data name="&gt;&gt;btnRgstrStud.Name" xml:space="preserve">
-    <value>btnRgstrStud</value>
+  <data name="&gt;&gt;btnShowResult.Name" xml:space="preserve">
+    <value>btnShowResult</value>
   </data>
-  <data name="&gt;&gt;btnRgstrStud.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnShowResult.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnRgstrStud.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnShowResult.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnRgstrStud.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;btnShowResult.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <metadata name="lblTotalStuds.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="lblTotalStuds.AutoSize" type="System.Boolean, mscorlib">
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 23</value>
   </data>
-  <data name="lblTotalStuds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 313</value>
-  </data>
-  <data name="lblTotalStuds.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 23</value>
-  </data>
-  <data name="lblTotalStuds.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="lblTotalStuds.Text" xml:space="preserve">
-    <value>Number of students: </value>
-  </data>
-  <data name="&gt;&gt;lblTotalStuds.Name" xml:space="preserve">
-    <value>lblTotalStuds</value>
-  </data>
-  <data name="&gt;&gt;lblTotalStuds.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTotalStuds.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblTotalStuds.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>860, 475</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 14.25pt</value>
@@ -757,12 +784,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>InstructorForm</value>
-  </data>
-  <data name="&gt;&gt;jDragControl1.Name" xml:space="preserve">
-    <value>jDragControl1</value>
-  </data>
-  <data name="&gt;&gt;jDragControl1.Type" xml:space="preserve">
-    <value>JDragControl.JDragControl, JDragControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>InstructorForm</value>

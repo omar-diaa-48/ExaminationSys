@@ -29,7 +29,6 @@ namespace ExaminationSys
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentForm));
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -61,7 +60,6 @@ namespace ExaminationSys
             this.courses = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.StudentFormDrag = new JDragControl.JDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -448,11 +446,6 @@ namespace ExaminationSys
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // StudentFormDrag
-            // 
-            this.StudentFormDrag.GetForm = this;
-            this.StudentFormDrag.TargetControl = this;
-            // 
             // StudentForm
             // 
             this.AllowDrop = true;
@@ -489,6 +482,9 @@ namespace ExaminationSys
             this.Name = "StudentForm";
             this.Text = "StudentForm";
             this.Load += new System.EventHandler(this.StudentForm_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StudentForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.StudentForm_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.StudentForm_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -532,6 +528,5 @@ namespace ExaminationSys
         private System.Windows.Forms.ComboBox courses;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private JDragControl.JDragControl StudentFormDrag;
     }
 }

@@ -12,6 +12,9 @@ namespace ExaminationSys
 {
     public partial class TheExam : Form
     {
+        bool isMouseDown = false;
+        Point LastLocation = new Point();
+
         public static string Studchoosen = "";
         public static int currentQ = 0;
         public static ReturnedExam studExam = new ReturnedExam();
@@ -147,6 +150,26 @@ namespace ExaminationSys
             MessageBox.Show("Your Grade is " + G.ToString());
             DBClasses.AddStudent_Exam(studExam);
            
+        }
+
+        private void TheExam_MouseDown(object sender, MouseEventArgs e)
+        {
+            isMouseDown = true;
+            LastLocation.X = e.X;
+            LastLocation.Y = e.Y;
+        }
+
+        private void TheExam_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                this.Location = new Point(this.Location.X - (LastLocation.X - e.Location.X), this.Location.Y - (LastLocation.Y - e.Location.Y));
+            }
+        }
+
+        private void TheExam_MouseUp(object sender, MouseEventArgs e)
+        {
+            isMouseDown = false;
         }
     }
 }

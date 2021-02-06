@@ -29,7 +29,6 @@ namespace ExaminationSys
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.usrNameTxt = new System.Windows.Forms.TextBox();
             this.validate = new System.Windows.Forms.Button();
@@ -44,7 +43,6 @@ namespace ExaminationSys
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.MainWindowDrag = new JDragControl.JDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -191,11 +189,6 @@ namespace ExaminationSys
             this.panel5.Size = new System.Drawing.Size(844, 10);
             this.panel5.TabIndex = 15;
             // 
-            // MainWindowDrag
-            // 
-            this.MainWindowDrag.GetForm = this;
-            this.MainWindowDrag.TargetControl = this;
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -221,6 +214,9 @@ namespace ExaminationSys
             this.Name = "MainWindow";
             this.Text = "Log In";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainWindow_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainWindow_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainWindow_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -244,7 +240,6 @@ namespace ExaminationSys
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private JDragControl.JDragControl MainWindowDrag;
     }
 }
 

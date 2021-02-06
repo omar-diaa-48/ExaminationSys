@@ -13,7 +13,8 @@ namespace ExaminationSys
 {
     public partial class MainWindow : Form
     {
-
+        bool isMouseDow = false;
+        Point LastLocation = new Point();
 
         public static SqlConnection connection;   
         public MainWindow()
@@ -78,6 +79,26 @@ namespace ExaminationSys
         {
             MainWindow.connection.Close();
             Application.Exit();
+        }
+
+        private void MainWindow_MouseDown(object sender, MouseEventArgs e)
+        {
+            isMouseDow = true;
+            LastLocation.X = e.X;
+            LastLocation.Y = e.Y;
+        }
+
+        private void MainWindow_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDow)
+            {
+                this.Location = new Point(this.Location.X - (LastLocation.X - e.Location.X), this.Location.Y - (LastLocation.Y - e.Location.Y));
+            }
+        }
+
+        private void MainWindow_MouseUp(object sender, MouseEventArgs e)
+        {
+            isMouseDow = false;
         }
     }
 }

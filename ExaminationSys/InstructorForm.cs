@@ -13,6 +13,8 @@ namespace ExaminationSys
 {
     public partial class InstructorForm : Form
     {
+        bool isMouseDown = false;
+        Point LastLocation = new Point();
         public string NumberOfStudents
         {
             get => lblTotalStuds.Text;
@@ -105,6 +107,26 @@ namespace ExaminationSys
                 MessageBox.Show("Please select only one student to show his/her results");
 
             
+        }
+
+        private void InstructorForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            isMouseDown = true;
+            LastLocation.X = e.X;
+            LastLocation.Y = e.Y;
+        }
+
+        private void InstructorForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                this.Location = new Point(this.Location.X - (LastLocation.X - e.Location.X), this.Location.Y - (LastLocation.Y - e.Location.Y));
+            }
+        }
+
+        private void InstructorForm_MouseUp(object sender, MouseEventArgs e)
+        {
+            isMouseDown = false;
         }
     }
 }

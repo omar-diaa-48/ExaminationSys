@@ -13,6 +13,8 @@ namespace ExaminationSys
 {
     public partial class RegStudent : Form
     {
+        bool isMouseDown = false;
+        Point LastLocation = new Point();
        
         public RegStudent()
         {
@@ -92,6 +94,26 @@ namespace ExaminationSys
         {
             this.Close();
             Forms.InstForm.Show();
+        }
+
+        private void RegStudent_MouseDown(object sender, MouseEventArgs e)
+        {
+            isMouseDown = true;
+            LastLocation.X = e.X;
+            LastLocation.Y = e.Y;
+        }
+
+        private void RegStudent_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                this.Location = new Point(this.Location.X - (LastLocation.X - e.Location.X), this.Location.Y - (LastLocation.Y - e.Location.Y));
+            }
+        }
+
+        private void RegStudent_MouseUp(object sender, MouseEventArgs e)
+        {
+            isMouseDown = false;
         }
     }
 }
